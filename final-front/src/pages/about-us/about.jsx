@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../components/navbar/navbar';
 
-function Menu(props) {
+function About(props) {
     return (
         <div>
             <Navbar/>
-            Menu
+            About
         </div>
     );
 }
 
-export default Menu;
+export default About;
