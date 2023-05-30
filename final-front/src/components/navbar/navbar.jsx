@@ -46,17 +46,17 @@ function Navbar(props) {
 							<NavLink to="/entertainment">Entertainment <AiOutlineDown className="icon-nav"/></NavLink>
 							<ul className="dropdown-content">
 								<li>
-									<NavLink to="/entertainment/silent-room">
+									<NavLink to="/silent-room">
 										Silent Room
 									</NavLink>
 								</li>
 								<li>
-									<NavLink to="/entertainment/film">
+									<NavLink to="/film">
 										Film
 									</NavLink>
 								</li>
 								<li>
-									<NavLink to="/entertainment/playstation">
+									<NavLink to="/playstation">
 										Playstation
 									</NavLink>
 								</li>
