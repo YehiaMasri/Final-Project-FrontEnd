@@ -53,7 +53,7 @@ const Login = () => {
 	return (
 		<>
 			{loggedIn && isAdmin ? (
-				<Navigate to="/admin/dashboard" replace={true} />
+				<Navigate to="/maindash" replace={true} />
 			) : (
 				loggedIn && <Navigate to="/" replace={true} />
 			)}

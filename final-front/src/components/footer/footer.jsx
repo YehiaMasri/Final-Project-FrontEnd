@@ -6,19 +6,19 @@ import { NavLink } from "react-router-dom";
 import { AiOutlinePhone } from "react-icons/ai";
 // import { MdOutlineLocationOn } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
-import { BsFillEnvelopeFill } from "react-icons/bs";
+// import { BsFillEnvelopeFill } from "react-icons/bs";
 import { FaCaretRight } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 import image from "../../asset/images/304977202_599891048488227_4165140898872860292_n-removebg-preview-removebg-preview.png";
 const Footer = () => {
-	const nodeEnv = process.env.BCK_URL;
+	const nodeEnv = process.env.REACT_APP_URL;
 	const [social, setSocial] = useState([]);
 	const getSocialMedia = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:5000/socialmedia"
+				`${nodeEnv}/socialmedia`
 			);
 			setSocial(response.data.docs);
 		} catch (err) {

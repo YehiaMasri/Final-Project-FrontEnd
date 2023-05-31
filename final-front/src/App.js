@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main/main.jsx";
 import Home from "./pages/home/home.jsx";
+// Dashboard Componnents
+import MainDash from "./pages/MainDashboard/mainDash";
+import Dashboard from "./pages/Dashboard/dashboard.js";
+//====================
 import Product from "./pages/products/product.jsx";
 import PlayStation from "./pages/playstation/playstationn";
 import Entertainmnet from "./pages/entertainment/entertainment.jsx";
@@ -63,12 +67,18 @@ function App() {
 					>
 						<BrowserRouter>
 							<Routes>
-								<Route path="/login" element={<Login/>} />
-								<Route path="/register" element={<Register />}/>
+								<Route path="/login" element={<Login />} />
+								<Route
+									path="/register"
+									element={<Register />}
+								/>
 								<Route path="/" element={<Home />} />
 								<Route exact path="/" element={<Main />} />
 								<Route path="/products" element={<Product />} />
-								<Route path="/playstation" element={<PlayStation />}/>
+								<Route
+									path="/playstation"
+									element={<PlayStation />}
+								/>
 								<Route path="/menu" element={<Menu />} />
 								<Route path="/about" element={<About />} />
 								<Route path="/contact" element={<Contact />} />
@@ -76,8 +86,14 @@ function App() {
 									path="/entertainment"
 									element={<Entertainmnet />}
 								/>
-								{/* <Route path="/Register" element={< />} />
-				<Route path="/Login" element={<Home />} /> */}
+								<Route
+									path="/maindash"
+									element={<MainDash />}
+								/>
+								<Route
+									path="/dashboard-home"
+									element={<Dashboard />}
+								/>
 							</Routes>
 						</BrowserRouter>
 					</SidebarStatus.Provider>
